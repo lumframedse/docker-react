@@ -7,4 +7,4 @@ cache:
 before_install:
   - docker build -t lagaj/docker-react -f Dockerfile.dev .
 script: 
-  - docker run lagaj/docker-react npm test
+  - docker run lagaj/docker-react npm test -- --watchAll=false
