@@ -18,7 +18,7 @@ function App() {
         >
 
         </a>
-          it's not working mate or ... let's see it again
+          Automatically deployed react-app
       </header>
     </div>
   );
