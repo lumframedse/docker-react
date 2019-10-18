@@ -1,9 +1,10 @@
 sudo: required 
 services:
   - docker
-env:
-  - CI=true
+cache:
+  directories:
+    - node_modules
 before_install:
   - docker build -t lagaj/docker-react -f Dockerfile.dev .
 script: 
-  - docker run lagaj/docker-react npm run test 
+  - docker run lagaj/docker-react npm test
